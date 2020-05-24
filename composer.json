@@ -2,7 +2,7 @@
     "name": "thoulah/yii2-httpclient",
     "description": "Yii 2 HTTP client",
     "type": "yii2-extension",
-    "keywords": ["yii", "yii2", "rss", "reader", "helper", "component"],
+    "keywords": ["yii", "yii2", "httpclient", "helper", "component"],
     "homepage": "https://thoulah.github.com/yii2-httpclient",
     "license": "MIT",
     "authors": [
