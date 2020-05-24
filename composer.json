@@ -1,0 +1,68 @@
+{
+    "name": "thoulah/yii2-httpclient",
+    "description": "Yii 2 HTTP client",
+    "type": "yii2-extension",
+    "keywords": ["yii", "yii2", "rss", "reader", "helper", "component"],
+    "homepage": "https://thoulah.github.com/yii2-httpclient",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Thoulah",
+            "role": "Developer"
+        },
+        {
+            "name": "Mr.42",
+            "homepage": "https://mr42.me/",
+            "role": "Tester"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/Thoulah/yii2-httpclient/issues",
+        "source": "https://github.com/Thoulah/yii2-httpclient/tree/master"
+    },
+    "require": {
+        "php": ">=7.1.0",
+        "ext-curl": "*",
+        "yiisoft/yii2-httpclient": "~2.0.0"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "~2.15.0",
+        "phpmd/phpmd": "@stable",
+        "phpunit/phpunit": ">=7.5",
+        "squizlabs/php_codesniffer": "3.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "thoulah\\httpclient\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "thoulah\\httpclient\\cs\\": "cs",
+            "thoulah\\httpclient\\tests\\": "tests"
+        }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ],
+    "scripts": {
+        "php-cs-fixer": "@php vendor/bin/php-cs-fixer fix",
+        "phpcs": "@php vendor/bin/phpcs",
+        "phpmd": "@php vendor/bin/phpmd src/ text tests/data/phpmd_ruleset.xml",
+        "phpunit": "@php vendor/bin/phpunit --colors=always"
+    },
+    "scripts-descriptions": {
+        "php-cs-fixer": "Cleans to code with PHP Coding Standards Fixer.",
+        "phpcs": "PHP_CodeSniffer tokenizes PHP, JavaScript and CSS files and detects violations of a defined set of coding standards.",
+        "phpmd": "Runs the PHP Mess Detector.",
+        "phpunit": "Runs the PHPUnit programmer-oriented testing framework."
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    }
+}
